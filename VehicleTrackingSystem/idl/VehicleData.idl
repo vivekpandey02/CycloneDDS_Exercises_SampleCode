@@ -1,0 +1,25 @@
+module VehicleData
+{
+	struct Position
+	{
+		double latitude;
+		double longitude;
+	};
+
+	struct VehiclePosition
+	{
+		string v_Id;
+		Position v_CurrentPosition;
+		double v_CurrentSpeed;
+	};
+	#pragma keylist VehiclePosition v_Id
+
+	struct VehicleTracking
+	{
+		long noOfVehicle;
+		long vOnTheMove;
+		long vStopped;
+		long vOutOfNetwork; 
+	};
+	#pragma keylist VehicleTracking
+};

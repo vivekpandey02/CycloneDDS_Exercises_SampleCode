@@ -1,0 +1,15 @@
+module VehicleData
+{
+	struct Position
+	{
+		double latitude;
+		double longitude;
+	};
+
+	struct VehiclePosition
+	{
+		@key string v_Id;
+		Position v_CurrentPosition;
+		double v_CurrentSpeed;
+	};
+};
